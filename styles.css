@@ -1,0 +1,163 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Grid de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-grid-inf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-card {
+/*  background-color: white; */
+/*  border: 1px solid #ddd; */
+    border-radius: 5px;
+    overflow: hidden;
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; /* Espacio entre los botones */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #888;
+}
+
+.product-card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+#exercise1 {
+    display: grid; /* Utiliza Grid Layout para la disposición de los elementos. Esto convierte al contenedor en un grid container. */
+    grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual ancho (1fr cada una). El valor "1fr" significa una fracción del espacio disponible, distribuyendo el espacio equitativamente entre las columnas. */
+    gap: 10px; /* Define un espacio de 10px entre las filas y columnas del grid. Este espacio se aplica tanto horizontal como verticalmente entre los elementos hijos. */
+    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido del contenedor. Esto crea un margen interno entre el borde del contenedor y sus elementos. */
+    background-color: #f0f0f0; /* Establece un color de fondo gris claro para el contenedor. */
+}
+
+.grid-container img{
+    max-width: 350px;
+}
+.box {
+    display: flex; /* Utiliza Flexbox para la disposición interna del contenido de cada caja, permitiendo una alineación fácil y precisa. */
+ /* Centra horizontalmente el contenido dentro de cada caja (típicamente texto). */
+    align-items: center; /* Centra verticalmente el contenido dentro de cada caja. */
+    height: 100px; /* Define una altura fija de 100px para cada caja, asegurando un tamaño uniforme. */
+    color: rgb(0, 0, 0); /* Establece el color del texto en blanco, lo que asegura un buen contraste con los colores de fondo de las cajas. */
+  /*  font-weight: bold; /* Aplica un estilo de fuente en negrita al texto, haciéndolo más prominente y fácil de leer. */
+}
+
+.box1 {  
+    font-weight: bolder;
+    justify-content: left; 
+    background-color: rgb(255, 255, 255); } /* Establece un fondo rojo para la caja 1, diferenciándola visualmente de las demás. */
+.box2 { 
+     justify-content: center;
+     background-color: rgba(255, 255, 255, 0.521); 
+    } /* Establece un fondo verde para la caja 2. */
+.box3 { 
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.144); } /* Establece un fondo azul para la caja 3. */
